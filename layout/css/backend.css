@@ -1,0 +1,785 @@
+/* General Rules */
+body{
+    background-color:#f4f4f4;
+    font-size:16px;
+}
+#ourtimage{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#innerImage{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: dimgrey;
+    top: -92px;
+}
+.desc{
+    height: 24px;
+    overflow: hidden;
+}
+#innerImage i{
+    position: relative;
+    top: 15px;
+    left: 45px;
+}
+#userimage{
+    position: relative;
+    top: -25px;
+    width: 100%;
+    border: null;
+    border: none;
+    width: 100%;
+    height: 126%;
+}
+/* End Main Rulez */
+/* starting Upper Bar */
+.upper-bar{
+    background-color: darkslategray;
+    font-family: cursive;
+    color: #fff;
+    line-height: 43px;
+}
+.uppear-bar span.pull-right{
+    color: cornsilk;
+}
+/* Ending Upper Bar */
+/* Starting Login Page */
+
+/* Start Bootstrap Editing */
+.navbar-brand,
+.nav li a{
+    padding:15px 12px;
+}
+.navbar-brand{
+    font-size:1em;
+}
+.navbar-inverse .navbar-nav  > .open> a ,
+.navbar-inverse .navbar-nav  >.open> a:hover,
+.navbar-inverse .navbar-nav  >.open> a:focus,
+.dropdown-menu{
+    background-color: #3498db;
+}
+.navbar-fixed-bottom, .navbar-fixed-top{
+    position: relative;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus{
+    background-color: #8344ad;
+    color:#fff;
+}
+.dropdown-menu{
+    min-width:180px;
+    padding:0;
+    font-size:1em;
+    border:0;
+    border-radius: none;
+}
+@media (min-width: 768px){
+.navbar-right{
+    float: right!important;
+    margin-right: -18px;
+}
+}
+.dropdown-menu > li > a{
+    color:#fff;
+    padding:10px 15px;
+}
+/* End Bootstrao Editing */
+/* Starting Members Page */
+h1{
+    margin-top:70px;
+    margin-bottom: 30px;
+    color:#777;
+    font-size:55px;
+    font-weight: bold;
+}
+.show-pass{
+    position: absolute;
+    top:5px;
+    right:-30px;
+}
+.table tr td{
+    background-color:#fff;
+    vertical-align: middle !important;
+}
+.table tr th{
+    background-color:#333;
+    color:#fff;
+    text-align: center;
+}
+/* Ending Members Page */
+/* Starting Home Page */
+.selectboxit{
+    width:0;
+}  
+.Item-box{
+    position: relative;
+    height:230px;
+    border: none;
+    
+}
+.Item-box .Item-image{
+    height: 220px;
+}
+.desc{
+    display: none;
+}
+.Item-box .Price{
+    background-color:#B4B4b4;
+    padding:2px 10px;
+    position: absolute;
+    left:0;
+    top:10px;
+    font-weight: bold;
+    color:blue;
+    background-image: linear-gradient(180deg, #d3a3dc, #f3bc9c);  
+}
+.login-page [data-class="login"].active{
+    color:#337AB7;
+} 
+.login-page [data-class="singup"].active{
+    color:#5cb85c;
+} 
+.login-page form,
+.form-error{
+    max-width:380px !important;
+    margin:auto
+}
+.login-page .form-error .msg{
+    padding:10px;
+    text-align: left;
+    border-left:5px solid #cd6858;
+    margin-bottom: 8px;
+    color:#919191;
+    border-top:1px solid #e1e1e1;
+    border-right:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+}
+.login-page form input{
+    margin-bottom: 10px;
+}
+.login-page .active{
+    color:#B22020;
+}
+.login-page h1{
+    color:#c0c0c0;
+}
+.login-page h1 span{
+    cursor: pointer;
+}
+.login-page .singup{
+    display: none;
+}
+.information{
+    margin-top:20px;
+}
+.information ul{
+    margin:0;
+    padding:0;
+}
+.information ul li{
+    padding:10px;
+}
+.information ul li:nth-child(odd){
+    background-color:#eee;
+}
+.information ul li span{
+    display: inline-block;
+    width:120px;
+}
+.Item-image{
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    max-height: 220px
+}
+.center-block {
+    
+    margin-top: 18px;
+}
+.Products{
+    margin-top:60px;
+}
+.Products .row div{
+    margin-bottom: 30px;;
+}
+.information .btn{
+    margin-top:20px;
+}
+.item-info h2{
+    padding:10px;
+    margin:0;
+}
+.item-info  p{
+    padding:10px;
+}
+.item-info ul li{
+    padding:10px 0;
+}
+.item-info ul li:nth-child(odd){
+    background-color:#e8e8e8;
+}
+.item-info ul li span{
+    display: inline-block;
+    width:120px;
+}
+.custom-hr{
+    border-top:1px solid #c9c9c9;
+}
+.custom-hr1{
+    border-top:1px solid #757272;
+}
+.add-comment h3{
+    margin:0 0 10px;
+}
+.add-comment textarea{
+    display: block;
+    margin-bottom: 10px;
+    width: 565px;
+    height:120px;
+}
+.comment-box{
+    margin-bottom: 20px;
+}
+.comment-box img{
+    max-width:100px;
+    margin-bottom: 10px;
+}
+.comment-box .lead{
+    background-color: #e0e0e0;
+    position: relative;
+    padding:10px;
+    margin-top:20px;
+}
+.comment-box .lead::before{
+    content: "";
+    width:0;
+    height:0;
+    border-width:15px;
+    border-color:transparent #e0e0e0 transparent transparent;
+    border-style:solid;
+    position: absolute;
+    left:-30px;
+}
+.Item-box .non-approve {
+    background: #B22020;
+    width: calc(100% - 40px);
+    position: absolute;
+    margin: 0 20px;
+    bottom: 3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+.my-img{
+    width:36px;
+    height:36px;
+}
+.my-drop{
+    z-index: 12000;
+}
+.add-comment input[type='submit']{
+    margin-bottom: 20px;
+}
+.time{
+    line-height: 40px;
+}
+h1{
+    margin-top:20px;
+}
+form-group-lg select[multiple].form-control, .form-group-lg textarea.form-control {
+    height: 160px;
+}
+.clientEmail{
+    border:1px solid rgb(86 154 212);
+}
+@media(max-width:576px){
+    .add-comment textarea{
+        width:425px;
+    }
+}
+/* .Item-box .head{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+} */
+.fa-heart-o:before {
+    content: "\f08a";
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 20px;
+}
+.Item-box .head{
+    display: none;
+}
+.loving{
+    background-color:red;
+}
+/* Ending Category Page */
+.name{
+    color: cadetblue;
+    font-variant: all-petite-caps;
+    font-family: unset;
+    font-variant: petite-caps;
+    font-style: oblique;
+    /* margin-left:2Fpx; */
+}
+.name:hover{
+    color:rgb(238, 205, 205);
+}
+.uppear-bar{
+    line-height: 43px;
+}
+.upper-bar .menu{
+    line-height: 38px;
+    font-size: 30px;
+    padding: 0px 10px 0 10px;
+}
+.upper-bar .menu:hover{
+    cursor: pointer;
+}
+.uppear-menu{
+    width: 380px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgb(231, 229, 229);
+    display: none;
+    z-index: 10000;
+    overflow: auto;
+}
+.uppear-menu .Person{
+    width:380px;
+    height:50px;
+    background-color: #232f3e;
+    padding-top:10px;
+    margin-bottom: 30px;
+}
+.uppear-menu span{
+    color:#fff;
+    margin-left: 30px;
+    font-family: sans-serif;
+}
+.cat{
+    margin-bottom: 30px;
+}
+.cat li{
+    list-style: none;
+    margin-bottom: 14px;
+    margin-left: -38px;
+    padding-left: 37px;
+    cursor: pointer;
+    padding-top:7px;
+    padding-bottom:7px;
+    
+}
+.cat li:hover{
+    background-color: #C1C1C1;
+    border-radius: 11px;
+}
+.cat li:first-of-type{
+    color:#C1C1C1;
+    cursor: auto;
+}
+.cat li:first-of-type:hover{
+    background-color: transparent;
+}
+.cat li i{
+    margin-right:20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.cat li img{
+    width: 25px;
+    height: 25px;
+    line-height: 18px;
+    margin-left:-6px;
+}
+.canvas-background{
+    position: absolute;
+    will-change: opacity;
+    height: 100%;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background: rgba(1,1,1,0.8);
+    z-index: 1;
+    display: none;
+}
+.exit{
+    position: absolute;
+    top: 4px;
+    left: 28%;
+    color: #fff;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+    margin-left:10px;
+}
+.box{
+    height: 300px;
+    max-width: 400px;
+    background-color: red;
+    top: -303px;
+    z-index: 1;
+}
+.boxes{
+    margin-top:200px;
+}
+@media(max-width:768px){
+    .boxes{
+        margin-top:200px;
+    }
+}
+/* .carousel-control{
+    content: "\e080";
+    position: absolute;
+    top: -300px;
+    left: 40px;
+} */
+.img-profile{
+    float: right;
+    margin-top: -252px;
+}
+.img-profile span{
+    position: relative;
+    top: 3px;
+    left: 20px;
+    color: #0b65b3;
+}
+#scroll-top
+{
+    width:50px;
+    height:40px;
+    color:rebeccapurple;
+    text-align:center;
+    position: fixed;
+    z-index: 999999;
+    right:15px;
+    bottom: 10px;
+    display: none;
+    cursor: pointer;
+}
+#online-chatting , #chatting{
+    width: 318px;
+    height: 500px;
+    background: #fff;
+    z-index: 999999;
+    position: fixed;
+    display: none;
+    top: 95px;
+    right: 5px;
+    overflow-y: auto;
+}
+.exiting{
+    width:100%;
+    height: 40px;
+    background-color: rgb(64,69,83);
+    padding-top:9px;
+    padding-right:10px;
+    padding-left:10px;
+}
+.support{
+    color:#FFF;
+}
+.x{
+    /* position: absolute; */
+    /* right: 16px;*/
+    float:right;
+    color: #fff;
+    /* top: 9px; */
+    cursor: pointer;
+}
+.chatting-bady{
+    margin:15px;
+}
+.chatting-bady .form-group{
+    margin-top:20px;
+} 
+.chatting-bady .form-group .ErrorMess{
+    color:#B22020;
+    display: none;
+    font-family: emoji;
+    font-size: 14px;
+}
+.chatting-bady .form-group .cla{
+    margin-bottom: 10px;
+
+}
+.pepole{
+    border: 2px solid cornflowerblue;
+    min-height: 522px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.date{
+    margin: 20px 17px 6px;
+}
+.pepole .member-box{
+    background: aquamarine;
+    width: 112%;
+    margin-left: -15px;
+    margin-top: 14px;
+    height: 60px;
+    /* text-align: center; */
+    padding: 8px;
+    cursor: pointer;
+
+}
+.pepole .member-box:hover{
+    background-color: #B4B4b4;
+}
+.main-top{
+    width:100%;
+    height: 65px;
+    padding: 5px;
+    background-color: #cd6858;
+}
+
+.main-top img{
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+.main-top h2{
+    display: inline;
+    margin-top:3px;
+    color:#B4B4b4;
+}
+.main-top span{
+    display: block;
+    position: relative;
+    top: -18px;
+    left: 52px;
+}
+.message-body{
+    width:100%;
+    height: 81%;
+    background-color: rgb(230, 225, 225);
+    overflow: scroll;
+}
+.message-body .message{
+    margin-right: 36px;
+    margin-top: 45px;
+    background-color: #cd6858;
+    padding:20px;
+    border-radius: 20px;
+    clear: both;
+}
+.message-body .messagefrom{
+    margin-top:65px;
+    margin-left:20px;
+}
+.messagefromuser{
+    margin-top:20px;
+}
+.main-bottom input
+,.main-bottom input:focus{
+    bottom: 7px;
+    position: absolute;
+    height: 40px;
+    background-color: #EEE;
+    border-radius: 20px;
+}
+.main-bottom .send{
+    right: 9px;
+    background-color:rgb(0, 153, 255);
+}
+.pepole .member-box img  {
+    width:40px;
+    border-radius:50%;
+    float: left;
+    margin-top: -7px;
+}
+.chatarea{
+    border:2px solid #ddd;
+    height:522px;
+    margin-left:5px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 60px;
+}
+.chatarea h1{
+    color: #999;
+    font-size: 33px;
+    margin-bottom: 15px;
+}
+.chatarea p{
+    color: #999;
+}
+.secure{
+    width: 50%;
+    height: 50%;
+    margin: 88px auto;
+    margin-bottom: 10px;
+    border-radius: 33%;
+}
+.cart{
+    font-size: 35px;
+    margin-right: 22px;
+    line-height: 42px;
+}
+.AddToCart{
+    text-align: center;
+    padding: 7px;
+    text-transform: uppercase;
+    background-image: linear-gradient(180deg, #d3a3dc, #f3bc9c);
+    color: rgba(0,0,0,0.8);
+}
+.AddToCart:hover{
+    background-color: #cd6858;
+    /* transition: 1s; */
+}
+.AddToCart a{
+    text-decoration: none;
+
+}
+.number{
+    color: bisque;
+    border-radius: 10px;
+    font-size: 21px;
+    position: relative;
+    left: -26px;
+    top: -5px;
+}
+.top{
+    background-color:#37475a;;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer{
+    background-color:#232F3E;
+    padding-top: 30px;
+    color:white;
+}
+.footer .tab{
+    font-family: cursive;
+}
+.footer .tab h4{
+    font-size:140%;
+}
+.footer .tab li{
+    color:darkkhaki;
+    font-size:90%;
+    line-height: 1.8;
+    cursor: pointer;
+}
+.footer .tab li:hover{
+    text-decoration: underline #fff;
+}
+.footer .page-footer{
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+.download{
+    display:block;
+   
+}
+.download .Download , .download .View {
+    position: absolute;
+    top: 2px;
+    left: 154px;
+    color: #000;
+    background-color: #fff;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color:#5cb85c;
+    background-image: linear-gradient(180deg, #d3a3dc, #f3bc9c);
+}
+.download .View{
+    left:125px;
+}
+.orderDe a{
+position: relative;
+top: -145px;
+left: 250px;
+color:#B22020;
+}
+.price{
+    font-size: 28px;
+    font-family: cursive;
+    font-variant-caps: all-small-caps;
+    
+}
+.outerClass{
+    padding:30px;
+    background-color: white;
+    margin-bottom:40px;
+}
+legend{
+    background-color: white;
+    width:85px;
+    position: relative;
+    top: 22px;
+    border-top: 4px solid red;
+    border-bottom:none;
+    font-size: 90%;
+    /* text-align: center; */
+    font-weight: bold;
+    padding-left:18px;
+}
+.watchclass{
+    color: #888;
+    font-size: 130%;
+    margin-top: auto;
+    position: relative;
+    top: 16px;
+}
+.watch1{
+    position: relative;
+    left: 45%;
+    color: #776;
+    top: 10px;
+}
+.innerClass{position: relative;
+top: -12px;}
+.golaph{
+    background-color: white;
+    width: 109%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.itemordering{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Hover{
+    background-color:#252933;
+    height: 243px;
+    position: absolute;
+    height: auto;
+    width: 80%;
+    color:#fff;
+    font-size: 90%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    display: none;
+    
+}
+.Hover ul{
+    display: inline-block;
+    margin-left: 34px;
+}
+.Hover li{
+    color:#aba9a9;
+    cursor: pointer;
+}
+.Hover li:hover{
+    color:white;
+}
+.Hover .img-responsive{
+    display: inline;
+}
+.imga{
+    margin-left: 60px;
+}
