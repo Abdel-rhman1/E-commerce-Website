@@ -1,0 +1,299 @@
+/* General Rules */
+body{
+    background-color:#f4f4f4;
+    font-size:16px;
+}
+/* End Main Rulez */
+
+/* Starting Login Page */
+.login{
+    width:300px;
+    margin:100px auto;
+}
+.login input{
+    margin-bottom: 10px;
+}
+.login .form-control{
+    background-color:#eaeaea;
+}
+.login .btn{
+    background-color:#008dde;
+}
+.login h4{
+    color:#888;
+}
+/* End Login Page */
+/* Start Bootstrap Editing */
+.navbar-brand,
+.nav li a{
+    padding:15px 12px;
+}
+.navbar-brand{
+    font-size:1em;
+}
+
+
+.navbar-inverse .navbar-nav  > .open> a ,
+.navbar-inverse .navbar-nav  >.open> a:hover,
+.navbar-inverse .navbar-nav  >.open> a:focus,
+.dropdown-menu{
+    background-color: #3498db;
+}
+.navbar-fixed-bottom, .navbar-fixed-top{
+    position: relative;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus{
+    background-color: #8344ad;
+    color:#fff;
+}
+.dropdown-menu{
+    min-width:180px;
+    padding:0;
+    font-size:1em;
+    border:0;
+    border-radius: none;
+}
+.dropdown-menu > li > a{
+    color:#fff;
+    padding:10px 15px;
+}
+/* End Bootstrao Editing */
+/* Starting Members Page */
+h1{
+    margin-top:70px;
+    margin-bottom: 30px;
+    color:#777;
+    font-size:55px;
+    font-weight: bold;
+}
+.show-pass{
+    position: absolute;
+    top:5px;
+    right:-30px;
+}
+.table tr td{
+    background-color:#fff;
+    vertical-align: middle !important;
+}
+.table tr th{
+    background-color:#333;
+    color:#fff;
+    text-align: center;
+}
+/* Ending Members Page */
+/* Starting Home Page */
+.home-stats .stat{
+    border:1px solid #ccc;
+    padding:20px;
+    font-size:15px;
+    color:#fff;
+    position: relative;
+    overflow: hidden;
+}
+.home-stats .stat i{
+    position: absolute;
+    font-size: 80px;
+    top:35px;
+    left:30px;
+}
+.home-stats .stat .info{
+    float: right;
+}
+.home-stats .stat span{
+    display: block;
+    font-size:60px;
+    color:#fff;
+}
+.home-stats .stat span a{
+    color:#fff;
+}
+.home-stats .stat span a:hover{
+    text-decoration: none;
+}
+.leatest{
+    margin-top:50px;
+}
+.leatest .comment-box{
+    margin:5px 0 10px;
+}
+.leatest .comment-box .member-n,
+.leatest .comment-box .member-c{
+    float:left;
+}
+.leatest .comment-box .member-n{
+    width:80px;
+    text-align: center;
+    margin-right:20px;
+    position: relative;
+    top:10px;
+}
+.leatest .comment-box .member-n a{
+    color:#000;
+}
+.leatest .comment-box .member-c{
+    width:calc(100% - 100px) !important;
+    background-color:#EFEFEF;
+    padding:10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.leatest .comment-box .member-c:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    left:-30px;
+    top:5px;
+    width:0;
+    height: 0;
+    border-color:transparent #EFEFEF transparent transparent;
+    border-style:solid;
+    border-width:15px;
+}
+.leatest .toggle-info{
+    color:#999;
+    cursor: pointer;
+}
+.leatest .toggle-info:hover{
+    color:#444;
+}
+.home-stats .st-members{
+    background-color:#3498bd;
+}
+.home-stats .st-pending{
+    background-color:#c0392b;
+}
+.home-stats .st-items{
+    background-color:#d35400;
+}
+.home-stats .st-comments{
+    background-color:#8e44ad;
+}
+.leatest-users{
+    margin-bottom: 0;
+}
+.leatest-users li:nth-child(odd){
+    background-color: #eee;
+}
+.leatest-users li{
+    padding:10px ;
+    overflow:hidden;
+}
+.leatest-users .btn-success,
+.leatest-users .btn-info{
+    padding:2px 8px;
+}
+.leatest-users .btn-info{
+    margin-right:5px;
+}
+/* Ending Home Page */
+/* Starting Category Page */
+.category .cat:last-of-type ~ hr{
+    display: none;
+}
+.category .panel-body{
+    padding:0;
+}
+.category .panel-heading{
+    color:#959595;
+}
+.category .option a{
+    color:#888;
+    text-decoration: none;
+}
+.category .option span{
+    color:#888;
+    cursor: pointer;
+}
+.category .option .active{
+    color:#c0392b;
+    font-weight:bold;
+}
+
+.category .cat{
+    padding:15px;
+    position: relative;
+    overflow:hidden;
+}
+.category .cat:hover{
+    background-color: #eee;
+}
+.category .cat:hover .hidden-button{
+    right:10px;
+}
+.category .cat .hidden-button{
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    position: absolute;
+    top:15px;
+    right:-120px;
+}
+.category .cat .hidden-button a{
+    margin-right:5px;
+}
+.category hr{
+    margin-top:0;
+    margin-bottom:0;
+}
+.category .cat .option-view p{
+    margin: 10px 0;
+    color:#707070;
+}
+.category .cat h3{
+    margin:0;
+    cursor: pointer;
+    color:#6a6a6a;
+    font-weight: bold;
+}
+.category .cat .Visi,
+.category .cat .Commenting,
+.category .cat .Adev{
+    background-color:#c0392b;
+    color:#fff;
+    padding:5px 15px;
+    margin-right:6px;
+    border-radius: 6px;
+}
+.category .cat .Commenting{
+    background-color:#2c3e50;
+}
+.category .cat .Adev{
+    background-color:#d35400;
+}
+.Add-category{
+    margin-top:-10px;
+    margin-bottom: 30px;   
+}
+.selectboxit{
+    width:0;
+}  
+.child-cats{
+    margin:0 0 10px 20px;
+}
+.child-head{
+    margin:10px 0 10px 20px;
+    font-weight: bold;
+    color:#22ab79;
+}
+.child-cats li{
+    margin-left:10px;
+}
+.child-cats li:before{
+    content: "-";
+}   
+.child-cats .show-delete{
+    color:#f00;
+    display: none;
+}
+span.child-Cat{
+    margin-left:30px;
+}
+.memeber-mana img,.styleImage{
+    width: 50px;
+    height: 50px;
+}
+.styleImage{
+    border-radius: 50%;
+}
+/* Ending Category Page */
