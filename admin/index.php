@@ -8,7 +8,7 @@
     if(isset($_SESSION['username'])){
         header('Location:home.php');
     }
-    include "init.php";
+    include_once "init.php";
     if($_SERVER['REQUEST_METHOD']=='POST')
     {
         $username=filter_var($_POST['username']);
@@ -49,5 +49,5 @@
         <input class="btn btn-primary btn-block"type="submit" value="Login">
     </form>
 <?php 
-    include $tbl.'footer.php';
+    include_once $tbl.'footer.php';
 ?>

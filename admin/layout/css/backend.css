@@ -1,4 +1,4 @@
-/* General Rules */
+ General Rules */
 body{
     background-color:#f4f4f4;
     font-size:16px;
@@ -209,7 +209,13 @@ h1{
     color:#c0392b;
     font-weight:bold;
 }
-
+/*table styling*/
+th{
+    cursor: pointer;
+}
+#item-table table a{
+    color:white;
+} 
 .category .cat{
     padding:15px;
     position: relative;
@@ -296,4 +302,4 @@ span.child-Cat{
 .styleImage{
     border-radius: 50%;
 }
-/* Ending Category Page */
+/* Ending Category Page 

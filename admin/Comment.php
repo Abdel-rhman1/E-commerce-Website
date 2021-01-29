@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION['username'])){
         $title="Comments";
-        include "init.php";
+        include_once "init.php";
         $do=isset($_GET['do'])?$_GET['do']:'Manage';
         if($do=='Manage'){?>
             <h1 class="text-center">Manage Comments</h1>
@@ -152,7 +152,7 @@
                 redirectIndexPage($msg,6,'Comment.php');
             }
         }
-        include $tbl.'footer.php';
+        include_once $tbl.'footer.php';
     }else{
         header('index.php');
     }

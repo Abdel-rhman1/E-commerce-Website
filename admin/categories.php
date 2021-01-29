@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION['username'])){
         $title="Categories";
-        include "init.php";
+        include_once "init.php";
         $do=isset($_GET['do'])?$_GET['do']:'Manage';
         if($do=='Manage'){
             $sort='ASC';
@@ -403,7 +403,7 @@
             header("Content-Disposition:attachment;filename=download.xls");
             echo $output;
         }
-        include $tbl.'footer.php';
+        include_once $tbl.'footer.php';
     }else{
         header('index.php');
     }

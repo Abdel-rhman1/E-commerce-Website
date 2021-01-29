@@ -1,7 +1,7 @@
 <?php 
     session_start();
     if(isset($_SESSION['username'])){
-        include "init.php";
+        include_once "init.php";
         $title="Home";
         ?>
         <div class="container home-stats text-center">

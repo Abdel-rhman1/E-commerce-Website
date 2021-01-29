@@ -1,10 +1,13 @@
 <?php 
     session_start();
     if(isset($_SESSION['username'])){
-        include "init.php";
+        include_once "init.php";
         $title="Item";
         $do=isset($_GET['do'])?$_GET['do']:"Manage";
+        $_GET['order']='Name';
         if($do=="Manage"){
+            $order = $_GET['order'];
+            echo $order;
             $start=0;
             $stat="
                 Select 
@@ -22,7 +25,7 @@
                 where 
                     item3.ID >='$start' 
                 order by
-                    ID  limit 6";
+                    $order";
             $excute=mysqli_query($con,$stat);
             $count=mysqli_num_rows($excute);
             ?>
@@ -31,17 +34,18 @@
                 <?php
                     if($count!=0){ 
                 ?>
-                <div class="table-responsive">
+                <div class="table-responsive" id="item-table">
                     <table class="table table-bordered text-center">
                         <tr>
-                            <th>#ID</th>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                            <th>Adding Date</th>
-                            <th>Item Owner</th>
-                            <th>Item Category</th>
+                            <th><a class="column_sort" id="ID" data-order="desc">#ID</a></th>
+                            <th><a class="column_sort" id="ID" data-order="desc">Image</a></th>
+                            <th> <a class="column_sort" id="Name" data-order="desc">Name</a>
+                            </th>
+                            <th><a class="column_sort" id="Description" data-order="desc"   >Description</a></th>
+                            <th><a class="column_sort" id="Price" data-order="desc">Price</a></th>
+                            <th><a class="column_sort" id="Add_Date" data-order="desc"   >Adding Date</a></th>
+                            <th><a class="column_sort" id="Member_ID" data-order="desc"   >Item Owner</a></th>
+                            <th><a class="column_sort" id="Cat_ID" data-order="desc"   >Item Category</a></th>
                             <th>Control</th>
                         </tr>
                         <?php
@@ -88,17 +92,18 @@
                         <i class="fa fa-fast-forward" aria-hidden="true"></i>
                     </a>
                 </div>
-                <?php
-                    if(isset($_GET['action']) && $_GET['action']=='puls'){
-                        echo "World";
-                    }else{
-                        echo "hello";
-                    }
-                ?>
+                <div>
+                    <?php
+                        $offset = 5;
+                        $num = getnumber("item3");
+                        $num = ceil($num/$offset);
+                        echo ""
+                     ?>
+                </div>
                 <?php 
                     }else{
                         echo "<div class='alert alert-danger'>";
-                            echo " There Is Records To Show ";
+                            echo " There Is No Records To Show ";
                         echo "</div>";
                         echo '<a href="Item.php?do=Add" class="btn btn-primary btn-sm">
                         <i class="fa fa-plus"></i>Add New Item</a>';
@@ -110,8 +115,8 @@
         }elseif($do=='Add'){?>
             <div class="container">
                 <h1 class="text-center">Add New Item</h1>
-                <form class="form-horizontal" action="?do=Insert" method="POST" enctype="multipart/form-data">
-                                                                                <!-- enctype="multipart/form-data" -->
+                <form class="form-horizontal" action="?do=Insert" method="POST" enctype=multipart/form-data">
+                                                                                
                     <div class="form-group form-group-lg">
                         <label class=" col-sm-2 control-label">Name</label>
                         <div class="col-sm-7">
@@ -657,5 +662,5 @@
     }else{
         header('index.php');
     }
-    include $tbl.'footer.php';
+    include_once $tbl.'footer.php';
 ?>

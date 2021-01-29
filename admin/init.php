@@ -8,10 +8,10 @@
     include $tbl.'header.php';
     include $lang."eng.php";
     if(!isset($nonavbar)){
-        include $tbl.'navbar.php';
-         include $tbl.'footer.php';
+        include_once $tbl.'navbar.php';
+         include_once $tbl.'footer.php';
     }
-    include $tbl.'footer.php';
-    $res=get_included_files();
+    include_once $tbl.'footer.php';
+    // $res=get_included_files();
 
 ?>

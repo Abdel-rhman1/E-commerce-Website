@@ -59,5 +59,31 @@ $(function(){
         $(this).find('.show-delete').fadeIn(600);
     },function(){
         $(this).find('.show-delete').fadeOut(600);
-    })
+    });
+    $(document).on('click','.column_sort',function(){
+        alert("Hello World");
+        var column_Name = $(this).attr('id');
+        var order       = $(this).data('order');
+        var arrow='';
+        // glyphicon glyphicon-arrow-up
+        // glyphicon glyphicon-arrow-down
+        if(order =='desc'){
+            arrow = "&nbsp; <span class='glyphicon glyphicon-arrow-down'></span>";
+            
+        }else{
+            arrow = "&nbsp; <span class='glyphicon glyphicon-arrow-up'></span>";
+        }
+        $.ajax({
+            type : "POST",
+            url : "sort.php",
+            data :{columnName:column_Name , Order:order},
+            success:function(data){
+                $('#item-table').html(data);
+                $('#'+column_Name+'').append(arrow);
+            },
+            error:function(){
+                console.log("error");
+            },
+        });
+    });
 });

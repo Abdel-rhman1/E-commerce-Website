@@ -17,6 +17,13 @@
         header("refresh:$Seconds;url=$url");
         exit();
     }
+    function getnumber($tableName):int{
+        global $con;
+        $stat   ="select * from $tableName";
+        $excute = mysqli_query($con,$stat);
+        $num    = mysqli_num_rows($excute);
+        return $num;
+    }
     function checkItem($select,$from,$value):int{
         global $con;
         $stat="select $select from $from where $select='$value'";
