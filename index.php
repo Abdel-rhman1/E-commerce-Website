@@ -5,8 +5,8 @@
     echo "<div class='row'>";
     echo "<form>
         <div class='form-group form-group-lg col-sm-9'>
-            <input type='text' onkeyup='showHint(this.value)'
-            class='col-sm-8 col-sm-offset-3'placeholder='Type to search'>
+            <input type='text' id='search'
+            class='col-sm-8 col-sm-offset-4'placeholder='Type to search'>
         </div>
     </form>";
     echo "</div>";
@@ -87,8 +87,8 @@
         echo "<fieldset>";
         
         echo "</div>";
+        echo "<div id='item'>";
         echo "<div class='row'>";
-        
         while($Cat=mysqli_fetch_assoc($var)){
             echo "<div class='col-sm-3 col-md-2 col-xs-6'>";
                 echo "<div class='golaph'>";
@@ -134,7 +134,7 @@
             echo "</div>";
         }
         echo "</div>";
-        
+        echo "</div>";
     echo "</div>";
 ?>
 <div id="scroll-top">

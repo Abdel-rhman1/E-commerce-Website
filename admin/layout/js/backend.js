@@ -8,11 +8,7 @@ $(function(){
             $(this).html('<i class="fa fa-plus fa-lg"></i>');
         }
     })
-    $("select").selectBoxIt({
-        showEffect: "shake",        
-        autoWidth:false,
-        showFirstOption: false,
-    });
+
     $('[placeholder]').focus(function(){
         $(this).attr('data-text', $(this).attr('placeholder'));
         $(this).attr('placeholder','');
@@ -75,7 +71,7 @@ $(function(){
         }
         $.ajax({
             type : "POST",
-            url : "sort.php",
+            url  : "sort.php",
             data :{columnName:column_Name , Order:order},
             success:function(data){
                 $('#item-table').html(data);

@@ -10,6 +10,21 @@ $(function () {
             $('.desc').fadeIn(2000);   
         }
    });
+   $("#search").keyup(function(){
+       var val =  $(this).val();
+        $.ajax({
+            type : "POST",
+            url  : "search.php",
+            data : {value: val},
+            success:function(data){
+                $('#item').html(data);
+            },
+            error:function(){
+                console.log("No data Matched");
+            },
+
+        });
+    });
     $('#SetImage').click(function (){
         alert($("#Choice_Image")[0].files[0].name);
     })
