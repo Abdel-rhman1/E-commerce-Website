@@ -51,10 +51,10 @@
                         $image=$res['avatar'];
                     }
                     if(!empty($image)){
-                        echo "<img class='img-responsive' 
+                        echo "<img class='img-responsive strylingImage'
                         src='admin/Uploads/Avatars/$image'>";
                     }else{
-                        echo "<img class='img-responsive'src='img.png'>";
+                        echo "<img class='img-responsive strylingImage'src='img.png'>";
                     }
                     if($res['Online']==1){
                         echo "<span></span><span>Online</span>";

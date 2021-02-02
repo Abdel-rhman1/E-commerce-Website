@@ -4,10 +4,7 @@
         include_once "init.php";
         $title="Item";
         $do=isset($_GET['do'])?$_GET['do']:"Manage";
-        $_GET['order']='Name';
         if($do=="Manage"){
-            $order = $_GET['order'];
-            echo $order;
             $start=0;
             $stat="
                 Select 
@@ -25,7 +22,7 @@
                 where 
                     item3.ID >='$start' 
                 order by
-                    $order";
+                    ID";
             $excute=mysqli_query($con,$stat);
             $count=mysqli_num_rows($excute);
             ?>
@@ -115,7 +112,7 @@
         }elseif($do=='Add'){?>
             <div class="container">
                 <h1 class="text-center">Add New Item</h1>
-                <form class="form-horizontal" action="?do=Insert" method="POST" enctype=multipart/form-data">
+                <form class="form-horizontal" action="?do=Insert" method="POST" enctype="multipart/form-data">
                                                                                 
                     <div class="form-group form-group-lg">
                         <label class=" col-sm-2 control-label">Name</label>
@@ -244,7 +241,7 @@
                     $imageSize=$_FILES['Item_Image']['size'];
                     $imageType=$_FILES['Item_Image']['type'];
                     $imageTem=$_FILES['Item_Image']['tmp_name'];
-                    $allowedEsten=array('jpeg','jpg','png','gif');
+                    $allowedEsten=array('jpeg','jpg','png','gif','jfif');
                     $Esten=explode('.',$imageName);
                     $imageEst=strtolower(end($Esten));
                     // pdf Variables

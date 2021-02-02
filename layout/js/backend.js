@@ -25,6 +25,11 @@ $(function () {
 
         });
     });
+   $('#search').blur(function(){
+        if($(this).val()==0){
+            $('#search').attr('placeholder','Type To Search');
+        }
+   });
     $('#SetImage').click(function (){
         alert($("#Choice_Image")[0].files[0].name);
     })

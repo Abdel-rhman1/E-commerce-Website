@@ -1,5 +1,6 @@
 <?php 
     include "init.php";
+    ob_start();
     if($_SERVER['REQUEST_METHOD']=='POST'){
         echo "Welcome To You";
         $Email=filter_var($_POST['clientEmail'],FILTER_SANITIZE_STRING);
@@ -32,5 +33,7 @@
             }
         }
     }
+    ob_end_flush();
     include_once $tbl.'footer.php'; 
+
 ?>

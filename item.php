@@ -1,5 +1,6 @@
 <?php
     session_start();
+    ob_start();
     include "init.php";
     
     $title="Show Item Page";
@@ -188,4 +189,5 @@
         echo "</div>";
     }
     include_once $tbl.'footer.php'; 
+    ob_end_flush();
 ?>

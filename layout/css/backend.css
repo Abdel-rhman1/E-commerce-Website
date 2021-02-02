@@ -331,6 +331,12 @@ form-group-lg select[multiple].form-control, .form-group-lg textarea.form-contro
     right: 15px;
     font-size: 25px;
 } */
+.styling{
+    color:white;
+}
+.styling:hover{
+    color:white;
+}
 .fa-heart-o:before {
     content: "\f08a";
     position: absolute;
@@ -355,6 +361,9 @@ form-group-lg select[multiple].form-control, .form-group-lg textarea.form-contro
 }
 .name:hover{
     color:rgb(238, 205, 205);
+}
+.strylingImage{
+    border-radius: 50%;
 }
 .uppear-bar{
     line-height: 43px;
@@ -468,6 +477,7 @@ form-group-lg select[multiple].form-control, .form-group-lg textarea.form-contro
 .img-profile{
     float: right;
     margin-top: -252px;
+    width:25%;
 }
 .img-profile span{
     position: relative;

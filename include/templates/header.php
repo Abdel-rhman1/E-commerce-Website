@@ -1,5 +1,6 @@
 <?php
   // session_start();
+ob_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,10 +41,10 @@
                 </i>
               </a>
            <?php }else{?>
-            <a href="" class="pull-right">Arabic</a> 
-                <a href='login.php'>
+            
+                <a href='login.php' class='styling'>
                     <span class="pull-right">
-                        Login / Singup
+                        Login
                     </span>
                 </a>
                               
@@ -186,4 +187,7 @@
           <img src='Images/Feature-Phone.jpg' class='img-responsive imga'></img>
     </div>
   </div><!-- /.container-fluid -->
+  <?php 
+    ob_end_flush();
+  ?>
 </nav>

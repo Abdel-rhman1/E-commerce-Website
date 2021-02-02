@@ -8,7 +8,11 @@ $(function(){
             $(this).html('<i class="fa fa-plus fa-lg"></i>');
         }
     })
-
+    $("select").selectBoxIt({
+        showEffect: "shake",        
+        autoWidth:false,
+        showFirstOption: false,
+    });
     $('[placeholder]').focus(function(){
         $(this).attr('data-text', $(this).attr('placeholder'));
         $(this).attr('placeholder','');

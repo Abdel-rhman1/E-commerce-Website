@@ -2,14 +2,7 @@
     include "cars.php";
     $var=getCat('item3','ID','WHERE approve=1');
     echo "<div class='container Products'>";
-    echo "<div class='row'>";
-    echo "<form>
-        <div class='form-group form-group-lg col-sm-9'>
-            <input type='text' id='search'
-            class='col-sm-8 col-sm-offset-4'placeholder='Type to search'>
-        </div>
-    </form>";
-    echo "</div>";
+   
     echo "<fieldset>
         <legend>Fashion</legend>";
         echo "<div class='outerClass'>";
@@ -85,7 +78,12 @@
             </div>
         </div>";
         echo "<fieldset>";
-        
+        echo "</div>";
+         echo "<div class='row'>";
+            echo "<div class='form-group form-group-lg col-sm-8 col-xs-11'>
+                    <input type='text' id='search'
+                    class='col-sm-8 col-xs-10 col-sm-offset-5 col-xs-offset-2'placeholder='Type to search'>
+                </div>";
         echo "</div>";
         echo "<div id='item'>";
         echo "<div class='row'>";
@@ -187,14 +185,7 @@
                 <div class="form-group form-group-md">
                     <label class="col-sm-2 control-label">Message</label>
                     <div class="col-sm-10 cla">
-                        <textarea
-                            type="phone"
-                            class="form-control ConMessage"
-                            name="ConMessage"
-                            rows="6"
-                            required="required"
-                        >
-                    </textarea>
+                        <textarea type="phone" class="form-control ConMessage" name="ConMessage" rows="6" required="required" placeholder="Message"></textarea>
                     </div>
                     <span class="ErrorMess col-sm-offset-2"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Please Enter valid Message</span>
                 </div>
