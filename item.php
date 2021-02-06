@@ -76,18 +76,17 @@
                 <li> 
                     <i class="fa fa-tags fa-fw"></i>
                     <?php $phone=$Res['phone']; ?>
-                    <span>Whattsap: </span> <?php echo "<a href='https://api.whatsapp.com/send?phone=$phone'";
-                    echo $Res['phone'];?></a>
+                    <span>Whattsap: </span> <?php echo "<a href='https://api.whatsapp.com/send?phone=$phone'>"; echo $Res['phone'];?></a>
                 </li>
-                    <li> 
-                        <i class="fa fa-tags fa-fw"></i>
-                        <span>Tags</span>
-                        <?php
-                            $alltags=explode(',',$Res['Tags']);
-                            foreach ($alltags as $tag) {
-                                $tag=str_replace(' ','',$tag);
+                <li> 
+                    <i class="fa fa-tags fa-fw"></i>
+                    <span>Tags</span>
+                    <?php
+                        $alltags=explode(',',$Res['Tags']);
+                        foreach ($alltags as $tag) {
+                            $tag=str_replace(' ','',$tag);
                                 echo "<a href='tags.php?name=$tag'>$tag</a>"."|";
-                            } 
+                        } 
                         ?>
                     </li>
             </ul>

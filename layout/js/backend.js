@@ -3,7 +3,7 @@ $(function () {
 //        return false;
 //    });
    $(window).scroll(function(){
-        var x= parseInt($(".caption").offset().top);
+        var x = parseInt($(".golaph").offset().top);
         var y = parseInt($(window).scrollTop());
         console.log(y >= x);
         if(y >= (x-200)){

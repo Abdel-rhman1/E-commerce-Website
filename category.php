@@ -14,6 +14,7 @@
             while($Cat=mysqli_fetch_assoc($var)){
                 echo "<div  
                         style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'class='col-xs-6 col-md-2 col-sm-3'>";
+                    
                     echo "<div class='thumbnail Item-box'>";
                         echo "<span class='Price'>". $Cat['Price']."</span>";
                         if(!empty($Cat['Image'])){
@@ -38,7 +39,13 @@
                     echo "<div class='caption'>";
                         $ID=$Cat['ID'];
                         echo "<h3><a href='item.php?Item_ID=$ID'>".$Cat['Name']."</a></h3>";
-                        echo "<p>".$Cat['Description']."</p>";
+                        // echo "<p>".$Cat['Description']."</p>";
+
+                        if(strlen($Cat['Description']) > 17){
+                            echo "<p class='text-center'>".substr($Cat['Description'],0,17)."...</p>";
+                        }else{
+                            echo "<p class='text-center'>".$Cat['Description']."</p>";
+                        }
                          echo "<div class='AddToCart'>";
                          echo "<a href='ordering.php?do=Add&ID=$ID'>Add To Card</a>";
                      echo "</div>";

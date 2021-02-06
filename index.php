@@ -118,7 +118,13 @@
                     $ID=$Cat['ID'];
                     echo "<h3><a href='item.php?Item_ID=$ID'>".$Cat['Name']."</a></h3>";
                 
-                    echo "<p class='desc'>".$Cat['Description']."</p>";
+                    //echo "<p class='desc'>".$Cat['Description']."</p>";
+                    
+                    if(strlen($Cat['Description']) > 23){
+                        echo "<p class='desc'>".substr($Cat['Description'],0,23)."...</p>";
+                    }else{
+                        echo "<p class='desc'>".$Cat['Description']."</p>";
+                    }
                     echo "<span>";
                     for($i=0;$i<5;$i++){
                         echo '★';

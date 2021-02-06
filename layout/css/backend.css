@@ -146,6 +146,7 @@ h1{
 }
 .Item-box .Item-image{
     height: 220px;
+    border: 1px solid #020202;
 }
 .desc{
     display: none;
