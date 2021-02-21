@@ -403,7 +403,7 @@
             header("Content-Disposition:attachment;filename=download.xls");
             echo $output;
         }
-        include_once $tbl.'footer.php';
+        
     }else{
         header('index.php');
     }

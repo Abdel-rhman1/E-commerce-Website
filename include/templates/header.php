@@ -68,6 +68,7 @@ ob_start();
                       src='img.png'alt=''>";
                   } 
             ?>
+            <!-- <div class="userandexit"> -->
             <span class="lead">Hello,
             <?php
               if(isset($_SESSION['User'])){
@@ -76,6 +77,8 @@ ob_start();
                 echo "<a class='lead'href='login.php'>Sing In</a>";
               }
             ?>  </span>
+            <span class="pull-right exit">x</span>
+          <!-- </div> -->
         </div>
         <div>
         <ul class="cat">
@@ -119,7 +122,7 @@ ob_start();
           </ul>
         </div>
     </div>
-    <span class="exit">X</span>
+    
     <nav class="navbar-inverse navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->

@@ -49,5 +49,5 @@
         <input class="btn btn-primary btn-block"type="submit" value="Login">
     </form>
 <?php 
-    include_once $tbl.'footer.php';
+    
 ?>

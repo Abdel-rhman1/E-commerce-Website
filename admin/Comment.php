@@ -152,7 +152,7 @@
                 redirectIndexPage($msg,6,'Comment.php');
             }
         }
-        include_once $tbl.'footer.php';
+        
     }else{
         header('index.php');
     }

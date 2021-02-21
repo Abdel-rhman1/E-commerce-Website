@@ -128,14 +128,14 @@ $(function () {
         $('#online-chatting').hide(200);
     });
     $('.menu').click(function(){
-        $('.uppear-menu').fadeIn(400);
-        $('.canvas-background').fadeIn(400);
-        $('.exit').fadeIn(400);
+        $('.uppear-menu').slideDown(400);
+        $('.canvas-background').hide(400);
+        $('.exit').show(400);
         $('body').css('overflow','hidden');
     });
     $('.exit').click(function(){
-        $('.uppear-menu').hide(400);
-        $('.exit').fadeOut(200);
+        $('.uppear-menu').slideUp('slow');
+        $('.exit').hide(200);
         $('body').css('overflow','scroll');
         $('.canvas-background').fadeOut(400);
     })

@@ -47,6 +47,7 @@
                         </tr>
                         <?php
                             //$res = mysqli_fetch_assoc($excute);
+                        
                             while($row=mysqli_fetch_assoc($excute)){
                                 echo "<tr>";
                                     $Id=$row['ID'];
@@ -82,12 +83,12 @@
                 <a href="Item.php?do=Add" class="btn btn-primary btn-sm">
                 <i class='fa fa-plus'></i>Add New Item</a>
                 <div class='pull-right'>
-                    <a href="Item.php?action=puls">
-                        <i class="fa fa-fast-backward" aria-hidden="true"></i>
-                    </a> || 
-                    <a href='#'>
-                        <i class="fa fa-fast-forward" aria-hidden="true"></i>
-                    </a>
+                <?php 
+                    $num = ceil(getnumber("item3")/6);
+                    for($i=$num;$i>=1;$i--){
+                        echo "<span class='alert alert-success btn-sm target' >".$i."</span>";
+                    }
+                ?>
                 </div>
                 <div>
                     <?php
@@ -659,5 +660,5 @@
     }else{
         header('index.php');
     }
-    include_once $tbl.'footer.php';
+    
 ?>

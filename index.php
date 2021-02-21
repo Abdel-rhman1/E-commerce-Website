@@ -151,7 +151,7 @@
     </div>
     <div class="chatting-bady">
         <p>Hala ! How we can help you ?</p>
-            <form class="form-horizontal conform" onsubmit=""action="chatting.php?do=main" method="post">
+            <form class="form-horizontal conform" onsubmit=""method="post">
                 <div class="form-group form-group-md">
                     <label class="col-sm-2 control-label">Name</label>
                     <div class="col-sm-10 cla">

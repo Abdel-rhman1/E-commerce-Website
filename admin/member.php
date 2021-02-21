@@ -438,7 +438,7 @@
             }
             echo "</div>";
         }
-        include_once $tbl.'footer.php';
+        
     } else{
         header('Location:index.php');
     }

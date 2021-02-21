@@ -189,7 +189,7 @@
                 </div>
         </div>
         <?php
-        include_once $tbl.'footer.php';
+        
     }else{
         echo "You Are Aouthrized To View This Page";
         sleep(2);

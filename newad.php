@@ -54,6 +54,13 @@
             </div>
             <div class="panel-body">
                 <div class="row">
+                    <div class="col-sm-8 form-horizontal">
+                        <div class="form-group form-group-lg">
+                            <span class="control-label col-sm-6">first Step: adding basics Information</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-8">
                         <form  class="form-horizontal"action="<?php $_SERVER['PHP_SELF'] ?>"method="post" enctype="multipart/form-data">
                             <div class="form-group form-group-lg">

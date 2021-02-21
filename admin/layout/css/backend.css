@@ -91,6 +91,10 @@ h1{
     position: relative;
     overflow: hidden;
 }
+.target{
+    margin:2px;
+    cursor: pointer;
+}
 .home-stats .stat i{
     position: absolute;
     font-size: 80px;

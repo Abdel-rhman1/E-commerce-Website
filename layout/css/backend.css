@@ -1,4 +1,7 @@
 /* General Rules */
+input{
+    outline:none;
+}
 ::-webkit-scrollbar{
     width:15px;
 }
@@ -23,6 +26,7 @@
 body{
     background-color:#f4f4f4;
     font-size:16px;
+    height: auto;
 }
 #ourtimage{
     width: 110px;
@@ -445,14 +449,11 @@ form-group-lg select[multiple].form-control, .form-group-lg textarea.form-contro
     display: none;
 }
 .exit{
-    position: absolute;
-    top: 4px;
-    left: 28%;
-    color: #fff;
+    color: #e7e5e5;
+    margin-right: 24px;
     font-size: 25px;
-    display: none;
+    margin-top: -7px;
     cursor: pointer;
-    margin-left:10px;
 }
 .box{
     height: 300px;
@@ -593,7 +594,7 @@ form-group-lg select[multiple].form-control, .form-group-lg textarea.form-contro
 }
 .message-body{
     width:100%;
-    height: 81%;
+    height: 89%;
     background-color: rgb(230, 225, 225);
     overflow: scroll;
 }
